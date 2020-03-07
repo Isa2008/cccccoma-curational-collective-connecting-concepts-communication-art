@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background: white;
+    color: black;
+}
+
+a {
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* HEADER */
+.header{
+
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+#cccccoma-logo {
+    width: 50px;
+    height: 50px;
+}
+
+#hamburger-button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+/* MENU */
+#hamburger-menu {
+    position: fixed;
+    margin-top: 100px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, .35); */
+    z-index: 888;
+    visibility: hidden;
+}
+
+#hamburger-menu.on {
+    visibility: visible;
+}
+
+#menu {
+    /* position: absolute; */
+    /* top: 0;
+    right: 0;
+    bottom: 0; */
+    /* width: 100%; */
+    /* max-width: 300px; */
+    height: 100%;
+    /* background: pink; */
+    /* color: white; */
+    padding: 30px;
+    font-size: 26px;
+    /* visibility: hidden; */
+    transform: translateX(100%);
+}
+
+.on #menu {
+    visibility: visible;
+    transition-property: transform;
+    transform: translateX(0%);
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.x {
+    cursor: pointer;
+    /* color: red; */
+    position: absolute;
+    /* top: 10px; */
+    right: 20px;
+    font-size: 20px;
+    font-family: helvetica, sans-serif;
+}
