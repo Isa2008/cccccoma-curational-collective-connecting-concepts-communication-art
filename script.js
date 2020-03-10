@@ -1,13 +1,14 @@
-console.log("sanity check!", $);
+//console.log("sanity check!", $);
 
 (function() {
     var hamburgerButton = document.getElementById('hamburger-button');
-    var x = document.querySelector('#hamburger-menu .x');
+    var x = document.querySelector('#hamburger-menu .close-button');
     var menu = document.getElementById('menu');
     var hamburgerMenu = document.getElementById('hamburger-menu');
-
+    
     hamburgerButton.addEventListener('click', function() {
         hamburgerMenu.classList.add('on');
+        hamburgerButton.classList.remove('on');
     });
 
     x.addEventListener('click', function() {
@@ -22,4 +23,3 @@ console.log("sanity check!", $);
         event.stopPropagation();
     });
 })();
-

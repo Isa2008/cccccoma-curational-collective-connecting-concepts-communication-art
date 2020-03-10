@@ -3,6 +3,8 @@
 }
 
 html, body {
+    width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
     background: white;
@@ -13,25 +15,52 @@ a {
     list-style: none;
     color: black;
     text-decoration: none;
+    margin-right: 20px;
+}
+
+ul {
+    margin: 1vmin;
 }
 
 ul li {
     list-style: none;
     text-decoration: none;
+    margin-bottom: 1vmin;
+    padding: 0px;
 }
 
+li {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 1vmin;
+}
+
+.wrapper {
+    background-image: url('images/lombardo-cccccoma-nofont.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    /* background-size: cover; */
+    height: 100vw;
+    width: 100%;
+    /* height: 67vw; */
+}
 
 /* HEADER */
-.header{
-
+.header {
+    position: sticky;
+    top: 0;
 }
 
 /* NAV */
 .nav {
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px;
+    padding: 30px;
 }
 
 #cccccoma-logo {
@@ -40,22 +69,33 @@ ul li {
 }
 
 #hamburger-button {
+    visibility: visible;
     cursor: pointer;
     width: 50px;
     height: 50px;
 }
+#hamburger-button.on {
+    visibility: hidden;
+}
 
 /* MENU */
 #hamburger-menu {
-    position: fixed;
-    margin-top: 100px;
+    visibility: hidden;
+    position: absolute;
+    /* margin-top: -115px; */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    /* background-color: rgba(0, 0, 0, .35); */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* min-height: 320px;
+    min-width: 100%; */
+    background-color: white;
+    background-size: cover;
     z-index: 888;
-    visibility: hidden;
+    overflow: auto;
+    position: fixed;
 }
 
 #hamburger-menu.on {
@@ -63,21 +103,18 @@ ul li {
 }
 
 #menu {
-    /* position: absolute; */
-    /* top: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
     right: 0;
-    bottom: 0; */
+    bottom: 0;
+    left: 0;
+    /* height: 100%; */
     /* width: 100%; */
     /* max-width: 300px; */
-    height: 100%;
-    /* background: pink; */
-    /* color: white; */
-    padding: 30px;
-    font-size: 26px;
-    /* visibility: hidden; */
+    padding: 0px 35px;
     transform: translateX(100%);
 }
-
 .on #menu {
     visibility: visible;
     transition-property: transform;
@@ -86,12 +123,41 @@ ul li {
     transition-timing-function: ease-out;
 }
 
-.x {
-    cursor: pointer;
-    /* color: red; */
+.close-button {
     position: absolute;
-    /* top: 10px; */
+    top: 35px;
     right: 20px;
-    font-size: 20px;
     font-family: helvetica, sans-serif;
+    font-size: 50px;
+    cursor: pointer;
+    /* z-index: 1000 !important; */
+}
+
+.menu-nav {
+    margin-top: 100px;
+}
+
+.menulinks {
+    font-size: 34px;
+    margin-bottom: 5vmin;
+}
+
+.contact {
+    font-size: 22px;
+    margin-bottom: 1vmin;
+}
+
+.menu-socialmedia {
+    font-size: 22px;
+    /* margin-bottom: 30px; */
+}
+
+#menu-footer {
+    font-size: 14px;
+    margin-top: 5vmin;
+    /* bottom: 6vmin; */
+}
+
+.menu-footer-cccccoma {
+    margin-top: 5vmin;
 }

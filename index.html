@@ -6,50 +6,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="CCCCCOMA is a curational platform for contemporary art.">
         <meta name="keywords" content="CCCCCOMA, Berlin, Art, Kunst, Artists, Künstler, Collective, Contemporary, Curational, Communication, Concepts, Connecting, Exhibitions, Performances, Paintings, Sculptures, Installations, Events, Lectures, Canteen, Cooking, Food, Music">
-        <link rel="icon" type="jpg" href="fav.jpg">
+        <link rel="icon" type="jpg" href="images/fav.jpg">
         <title>CCCCCOMA</title>
         <link rel="stylesheet" href="styles.css" type="text/css">
     </head>
     <body>
 
-        <div class="header">
+        <div class="wrapper">
             <div class="nav">
-                <img id="cccccoma-logo" src="images/cccccoma.png" alt="cccccoma logo" />
+                <a href="index.html">
+                    <img id="cccccoma-logo" src="images/cccccoma.png" alt="cccccoma logo" />
+                </a>
                 <img id="hamburger-button" src="images/hamburger.svg" alt="hamburger" />
             </div>
-        </div>
-
-        <div id="hamburger-menu">
-            <div id="menu">
-                <a class="x">X</a>
-                <div class="menulinks">
-                    <a href="javascript://">Projects</a>
-                    <ul>
-                        <li><a href="javascript://">Current</a></li>
-                        <li><a href="javascript://">Upcoming</a></li>
-                        <li><a href="javascript://">Past</a></li>
-                    </ul>
+            <div id="hamburger-menu">
+                <div class="nav">
+                    <a href="index.html">
+                        <img id="cccccoma-logo" src="images/cccccoma.png" alt="cccccoma logo" />
+                    </a>
                 </div>
-                <div class="menulinks">
-                    <a href="javascript://">About</a>
-                </div>
-                <div class="menulinks-contact">
-                    <a href="javascript://">Contact</a>
-                    <a href="javascript://">Newsletter</a>
-                    <a href="javascript://">Contact</a>
-                </div>
-                <div class="menulinks-footer">
-                    © 2020
-                    <a href="javascript://">Instagram</a>
-                    <a href="javascript://">Facebook</a>
-                    <a href="javascript://">Imprint</a>
-                    <a href="javascript://">Privacy Policy</a>
+                <div id="menu">
+                    <a class="close-button">X</a>
+                    <div class="menu-nav">
+                        <div class="menulinks projects">
+                            <a href="javascript://">Projects</a>
+                            <ul>
+                                <li><a href="javascript://">Current</a></li>
+                                <li><a href="javascript://">Upcoming</a></li>
+                                <li><a href="javascript://">Past</a></li>
+                            </ul>
+                        </div>
+                        <div class="menulinks about">
+                            <a href="javascript://">About</a>
+                        </div>
+                        <div class="contact">
+                            <li><a href="javascript://">Contact</a></li>
+                            <li><a href="javascript://">Newsletter</a></li>
+                        </div>
+                        <div class="menu-socialmedia">
+                            <a href="https://www.instagram.com/cccccoma_berlin/"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <!-- <a href="https://www.facebook.com/cccccomaberlin/"><ion-icon name="logo-facebook"></ion-icon></a> -->
+                        </div>
+                        <div id="menu-footer">
+                            <a href="javascript://">Imprint</a>
+                            <a href="javascript://">Privacy Policy</a>
+                            <p class="menu-footer-cccccoma">All rights reserved 2020 © CCCCCOMA
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="script.js"></script>
     </body>
